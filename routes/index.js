@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next){
-  fs.readFile('views/index.html', function(err, data){
+  fs.readFile('index.html', function(err, data){
     res.send(data.toString());
   });
 });
