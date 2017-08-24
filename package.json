@@ -1,0 +1,21 @@
+{
+  "name": "node1",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "scss-compile": "node-sass -rw public/stylesheets/scss -o public/stylesheets/main",
+    "test": "npm run scss-compile",
+    "watch": "npm run scss-compile"
+  },
+  "dependencies": {
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express": "~4.14.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "scss-compile": "~0.1.7",
+    "serve-favicon": "~2.3.2"
+  }
+}
