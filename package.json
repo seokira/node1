@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
+    "fstart": "forever ./bin/www",
+    "sstart": "supervisor ./bin/www",
     "scss-compile": "node-sass -rw public/stylesheets/scss -o public/stylesheets/main",
     "test": "npm run scss-compile",
     "watch": "npm run scss-compile"
@@ -16,6 +18,7 @@
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
     "scss-compile": "~0.1.7",
+    "mysql": "~2.12.0",
     "serve-favicon": "~2.3.2"
   }
 }
